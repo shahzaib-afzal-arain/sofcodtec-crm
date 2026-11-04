@@ -1,0 +1,1 @@
+import React from 'react';import {DataTable,Panel,Badge} from '../../../components/ui/Elements';export default function LeadDirectory(){return <Panel title="Lead Directory" subtitle="Verified companies, contacts, and revenue signals" action={<Badge type="success">Live Sync</Badge>}><DataTable/></Panel>}
