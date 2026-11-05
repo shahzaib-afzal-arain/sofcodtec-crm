@@ -1,0 +1,6 @@
+﻿import React from 'react';
+import {ChevronLeft,ChevronRight} from 'lucide-react';
+export default function LeadsPagination({page,pageSize,total,onPage,onPageSize}){
+  const count=Math.max(1,Math.ceil(total/pageSize));const pages=[...new Set([1,page-1,page,page+1,count])].filter(value=>value>=1&&value<=count).sort((a,b)=>a-b);
+  return <footer className="leads-pagination"><span aria-live="polite">Showing {total?(page-1)*pageSize+1:0}–{Math.min(page*pageSize,total)} of {total} matching leads</span><label>Rows per page <select aria-label="Rows per page" value={pageSize} onChange={event=>onPageSize(Number(event.target.value))}>{[10,25,50].map(value=><option key={value}>{value}</option>)}</select></label><nav aria-label="Lead directory pagination"><button aria-label="Previous page" disabled={page===1} onClick={()=>onPage(page-1)}><ChevronLeft size={14}/></button>{pages.map((value,index)=><React.Fragment key={value}>{index>0&&value-pages[index-1]>1&&<span>…</span>}<button aria-current={page===value?'page':undefined} onClick={()=>onPage(value)}>{value}</button></React.Fragment>)}<button aria-label="Next page" disabled={page===count} onClick={()=>onPage(page+1)}><ChevronRight size={14}/></button></nav></footer>;
+}
