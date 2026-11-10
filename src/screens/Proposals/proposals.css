@@ -1,0 +1,118 @@
+﻿.proposals-page{min-width:0;color:var(--text);font-size:12px;padding-bottom:env(safe-area-inset-bottom,0px)}
+.proposals-page *{box-sizing:border-box}
+.proposals-page h1,.proposals-page h2,.proposals-page h3,.proposals-page p{margin:0}
+.proposals-page h1{font-size:clamp(22px,2.2vw,30px);line-height:1.2;letter-spacing:-.6px;margin:6px 0}
+.proposals-page h2{font-size:15px;line-height:1.4}
+.proposals-page h3{font-size:13px;margin:12px 0 7px}
+.proposals-page p,.proposals-page small{color:var(--muted);line-height:1.5;overflow-wrap:anywhere}
+.proposals-page small{display:block;font-size:10px}
+.proposals-page button,.proposals-page input,.proposals-page select,.proposals-page textarea{font:inherit;max-width:100%;color:var(--text);background:var(--surface);border:1px solid var(--border);border-radius:4px}
+.proposals-page button{font-size:11px;font-weight:600;min-height:34px;padding:7px 9px;cursor:pointer;line-height:1.4;overflow-wrap:anywhere}
+.proposals-page button:hover:not(:disabled){background:var(--subtle);border-color:var(--secondary)}
+.proposals-page button:disabled{opacity:.55;cursor:not-allowed}
+.proposals-page button:focus-visible,.proposals-page input:focus-visible,.proposals-page select:focus-visible,.proposals-page textarea:focus-visible,.proposals-page a:focus-visible,.proposals-page summary:focus-visible{outline:3px solid var(--secondary);outline-offset:3px}
+.proposals-page button[aria-pressed=true],.proposals-page .pp-primary{background:color-mix(in srgb,var(--secondary) 15%,var(--surface));border-color:var(--secondary)}
+.proposals-page input,.proposals-page select,.proposals-page textarea{width:100%;min-width:0;min-height:35px;padding:8px}
+.proposals-page textarea{resize:vertical}
+.proposals-page input[type=checkbox]{width:17px;height:17px;min-height:17px;flex-shrink:0;accent-color:var(--secondary)}
+.proposals-page label{display:flex;flex-direction:column;gap:4px;font-size:10px;color:var(--muted);min-width:0}
+.proposals-page a{color:var(--text);text-underline-offset:3px;text-decoration-color:var(--secondary);overflow-wrap:anywhere}
+.proposals-page summary{cursor:pointer;color:var(--text);min-height:34px;padding:8px 0;font-size:11px}
+.proposals-page .pp-header{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:16px}
+.proposals-page .pp-header>div:first-child{min-width:0;max-width:760px}
+.proposals-page .pp-breadcrumb{font-size:9px;letter-spacing:.7px;font-weight:700}
+.proposals-page .pp-header>.pp-actions{flex-shrink:0}
+.proposals-page .pp-actions{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.proposals-page .pp-panel{padding:14px;min-width:0;background:var(--surface);border:1px solid var(--border);border-radius:5px;box-shadow:0 1px 3px color-mix(in srgb,var(--text) 5%,transparent)}
+.proposals-page .pp-kpis{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin-bottom:12px}
+.proposals-page .pp-kpi{display:flex;flex-direction:column;align-items:flex-start;min-height:120px;padding:12px}
+.proposals-page .pp-kpi h2{font-size:10px;color:var(--muted);font-weight:500}
+.proposals-page .pp-kpi>strong{font-size:29px;line-height:1.3;margin:7px 0;font-variant-numeric:tabular-nums}
+.proposals-page .pp-kpi p{font-size:10px;line-height:1.4;margin-top:auto}
+.proposals-page .pp-data-note{font-size:10px;margin:9px 0}
+.proposals-page .pp-toolbar{margin:12px 0}
+.proposals-page .pp-tabs{display:flex;gap:3px;overflow-x:auto;padding-bottom:8px;border-bottom:1px solid var(--border)}
+.proposals-page .pp-tabs button{white-space:nowrap;flex-shrink:0;font-size:10px;border-color:transparent}
+.proposals-page .pp-tabs span{margin-left:4px}
+.proposals-page .pp-filters{display:grid;grid-template-columns:minmax(180px,1.7fr) repeat(3,minmax(100px,1fr)) auto auto;gap:7px;align-items:end;margin-top:9px}
+.proposals-page .pp-search{grid-column:auto}
+.proposals-page .pp-filters input,.proposals-page .pp-filters select,.proposals-page .pp-advanced-filters input,.proposals-page .pp-advanced-filters select{font-size:11px;padding:7px;min-height:35px}
+.proposals-page .pp-advanced-filters{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-top:10px;padding-top:10px;border-top:1px solid var(--border)}
+.proposals-page .pp-filters button>span{display:block;font-size:9px;color:var(--muted);font-weight:400}
+.proposals-page .pp-filters button[aria-expanded=true]{border-color:var(--secondary);background:var(--subtle)}
+.proposals-page .pp-section-head{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.proposals-page .pp-section-head p{font-size:10px}
+.proposals-page .pp-layout{display:grid;grid-template-columns:minmax(0,2fr) minmax(300px,1fr);gap:13px;align-items:start}
+.proposals-page .pp-detail-column{min-width:0;display:flex;flex-direction:column;gap:12px}
+.proposals-page .pp-table-scroll{overflow-x:auto;max-width:100%}
+.proposals-page .pp-table{table-layout:fixed;border-collapse:collapse;width:100%;min-width:720px;font-size:10px}
+.proposals-page .pp-table th{padding:8px 4px;font-size:8px;text-transform:uppercase;text-align:left;color:var(--muted);background:var(--subtle);border-block:1px solid var(--border);overflow-wrap:anywhere}
+.proposals-page .pp-table td{padding:8px 4px;vertical-align:top;line-height:1.4;border-bottom:1px solid var(--border);overflow-wrap:anywhere}
+.proposals-page .pp-table small{font-size:9px;margin-top:3px}
+.proposals-page .pp-table td>button{font-size:9px;padding:4px;min-height:28px}
+.proposals-page .pp-table td:nth-child(2)>button{font-size:8px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.proposals-page .pp-text-button{border:0;background:transparent;text-align:left;padding:0;min-height:0;white-space:normal;font-size:11px;font-weight:700}
+.proposals-page .pp-context{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.proposals-page .pp-badge{display:inline-block;font-size:9px;line-height:1.4;color:var(--text);border:1px solid var(--border);border-radius:3px;background:var(--subtle);padding:3px 5px}
+.proposals-page .pp-selected{background:color-mix(in srgb,var(--secondary) 8%,var(--surface));box-shadow:inset 3px 0 var(--secondary)}
+.proposals-page .pp-mobile-queue{display:none}
+.proposals-page .pp-pagination{display:flex;flex-wrap:wrap;gap:9px;align-items:center;justify-content:space-between;padding-top:12px;font-size:10px}
+.proposals-page .pp-pagination label{flex-direction:row;align-items:center}
+.proposals-page .pp-pagination select{width:65px}
+.proposals-page .pp-empty{text-align:center;color:var(--muted);padding:28px 14px;line-height:1.5}
+.proposals-page .pp-empty h3{font-size:17px;color:var(--text);margin:8px 0}
+.proposals-page .pp-empty>p{max-width:430px;margin:0 auto 10px}
+.proposals-page .pp-empty .pp-actions{justify-content:center;margin-top:15px}
+.proposals-page .pp-first-proposal{min-height:240px;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.proposals-page .pp-empty-symbol{display:grid;place-items:center;width:38px;height:38px;background:var(--subtle);color:var(--text);border:1px solid var(--border);border-radius:6px;font-size:20px;font-weight:700}
+.proposals-page .pp-zero-count{border-top:1px solid var(--border);margin-top:8px;padding-top:12px;font-size:10px}
+.proposals-page .pp-table td:nth-child(6),.proposals-page .pp-table th:nth-child(6){text-align:right;font-variant-numeric:tabular-nums}
+.proposals-page .pp-details>p{font-size:10px;margin:6px 0 10px}
+.proposals-page .pp-details .pp-actions{margin-bottom:12px}
+.proposals-page .pp-details>details{border-top:1px solid var(--border);margin-top:10px}
+.proposals-page .pp-details>details p{font-size:10px;margin:7px 0}
+.proposals-page .pp-document{line-height:1.5;overflow-wrap:anywhere}
+.proposals-page .pp-document-brand{display:flex;gap:8px;align-items:center;margin:15px 0}
+.proposals-page .pp-document-brand>span{display:grid;place-items:center;width:35px;height:35px;flex-shrink:0;background:var(--primary);color:#fff;font-size:22px;font-weight:800;border-radius:3px}
+.proposals-page .pp-document-brand strong{font-size:13px}
+.proposals-page .pp-document>h2{font-size:19px}
+.proposals-page .pp-document section{border-top:1px solid var(--border);padding-top:5px;margin-top:14px}
+.proposals-page .pp-document li{margin:5px 0}
+.proposals-page .pp-document ol{padding-left:20px}
+.proposals-page .pp-document p{white-space:pre-wrap;margin:7px 0;font-size:11px}
+.proposals-page .pp-milestone{background:var(--subtle);border:1px solid var(--border);padding:9px;margin:7px 0;border-radius:4px}
+.proposals-page .pp-pricing-scroll{overflow:auto;max-width:100%}
+.proposals-page .pp-pricing-scroll table{border-collapse:collapse;width:100%;font-size:10px;min-width:260px}
+.proposals-page .pp-pricing-scroll td,.proposals-page .pp-pricing-scroll th{padding:7px 4px;text-align:left;border-bottom:1px solid var(--border)}
+.proposals-page .pp-price-total{display:flex;gap:7px;flex-wrap:wrap;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border);font-size:11px}
+.proposals-page .pp-price-total small{flex-basis:100%}
+.proposals-page .pp-bulk{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:14px 0;padding:12px;border:1px solid var(--secondary);background:var(--surface);border-radius:5px}
+.proposals-page .pp-bulk small{flex-basis:100%}
+.proposals-page .pp-editor,.proposals-page .pp-preview,.proposals-page .pp-templates,.proposals-page .pp-sources,.proposals-page .pp-prepare,.proposals-page .pp-status-form,.proposals-page .pp-confirm{margin:15px 0;scroll-margin-top:85px;overflow-wrap:anywhere}
+.proposals-page .pp-form-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:14px 0}
+.proposals-page .pp-editor fieldset{min-width:0;border:1px solid var(--border);padding:12px;margin:14px 0;border-radius:4px}
+.proposals-page .pp-editor legend{font-weight:700;padding:0 5px}
+.proposals-page .pp-editor-line{display:flex;gap:8px;align-items:end;margin-bottom:9px}
+.proposals-page .pp-editor-line label{flex:1}
+.proposals-page .pp-pricing-line{display:grid;grid-template-columns:2fr 1fr .7fr 1fr 1fr auto;gap:8px;align-items:end;margin-bottom:10px}
+.proposals-page .pp-milestone-line{display:grid;grid-template-columns:2fr 1fr 1fr auto;gap:8px;align-items:end;margin-bottom:10px}
+.proposals-page .pp-check{flex-direction:row;align-items:center;gap:8px;min-height:34px}
+.proposals-page .pp-totals-live{padding:10px;background:var(--subtle)}
+.proposals-page .pp-templates>label{max-width:450px}
+.proposals-page .pp-sources article{border-top:1px solid var(--border);padding:11px 0}
+.proposals-page .pp-sources article button{margin-top:7px}
+.proposals-page .pp-preview .pp-document{max-width:820px;margin:20px auto}
+.proposals-page .pp-preview .pp-actions{margin-top:10px}
+.proposals-page .pp-preview .pp-document p{font-size:13px}
+.proposals-page .pp-prepare>p{margin:9px 0}
+.proposals-page .pp-prepare>label{margin-top:13px}
+.proposals-page .pp-lifecycle-controls p{font-size:10px;margin-bottom:9px}
+.proposals-page .pp-confirm{border:2px solid var(--secondary)}
+.proposals-page .pp-confirm p{margin:8px 0}
+.proposals-page .pp-error{padding:11px;border:1px solid #e53c53;border-radius:4px;color:var(--text);background:color-mix(in srgb,#e53c53 8%,var(--surface));margin:11px 0}
+.proposals-page .pp-notice{display:flex;gap:10px;align-items:center;justify-content:space-between;padding:10px;border:1px solid var(--border);border-radius:4px;background:var(--surface);margin-bottom:12px;overflow-wrap:anywhere}
+@media(max-width:1150px){.proposals-page .pp-header{flex-direction:column;align-items:flex-start}.proposals-page .pp-kpis{grid-template-columns:repeat(3,minmax(0,1fr))}.proposals-page .pp-filters{grid-template-columns:repeat(3,minmax(0,1fr))}.proposals-page .pp-advanced-filters{grid-template-columns:repeat(3,minmax(0,1fr))}.proposals-page .pp-layout{grid-template-columns:minmax(0,1.7fr) minmax(280px,1fr)}.proposals-page .pp-pricing-line{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:900px){.proposals-page .pp-layout{grid-template-columns:1fr}.proposals-page .pp-form-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.proposals-page .pp-filters,.proposals-page .pp-advanced-filters{grid-template-columns:repeat(2,minmax(0,1fr))}.proposals-page .pp-search{grid-column:span 2}}
+@media(max-width:600px){.proposals-page button,.proposals-page .pp-text-button,.proposals-page summary{min-height:44px}.proposals-page input,.proposals-page select{min-height:44px}.proposals-page .pp-header>.pp-actions{width:100%}.proposals-page .pp-header>.pp-actions button{flex:1}.proposals-page .pp-kpis{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.proposals-page .pp-kpi{min-height:125px}.proposals-page .pp-kpi>strong{font-size:25px}.proposals-page .pp-panel{padding:11px}.proposals-page .pp-filters,.proposals-page .pp-advanced-filters,.proposals-page .pp-form-grid,.proposals-page .pp-pricing-line,.proposals-page .pp-milestone-line{grid-template-columns:1fr}.proposals-page .pp-search{grid-column:auto}.proposals-page .pp-table-scroll{display:none}.proposals-page .pp-mobile-queue{display:flex;flex-direction:column;gap:10px}.proposals-page .pp-mobile-card{padding:12px;border:1px solid var(--border);border-radius:4px;overflow-wrap:anywhere}.proposals-page .pp-mobile-card>button{margin:7px 0}.proposals-page .pp-check{min-height:44px}.proposals-page .pp-pagination{justify-content:flex-start}.proposals-page .pp-pagination>.pp-actions{width:100%;justify-content:space-between}.proposals-page .pp-pagination button{font-size:10px;padding:7px}.proposals-page .pp-editor-line{align-items:stretch;flex-direction:column}.proposals-page .pp-bulk{flex-direction:column;align-items:stretch;padding-bottom:max(12px,env(safe-area-inset-bottom,0px))}}
+@media(max-width:600px){.proposals-page .pp-filters input,.proposals-page .pp-filters select,.proposals-page .pp-advanced-filters input,.proposals-page .pp-advanced-filters select{min-height:44px}.proposals-page .pp-empty .pp-actions{width:100%;flex-direction:column;align-items:stretch}.proposals-page .pp-first-proposal{min-height:220px}}
+@media(max-width:360px){.proposals-page .pp-kpis{grid-template-columns:1fr}}

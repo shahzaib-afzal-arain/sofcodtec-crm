@@ -1,0 +1,103 @@
+﻿.meetings-page{min-width:0;color:var(--text);font-size:12px;padding-bottom:env(safe-area-inset-bottom,0px)}
+.meetings-page *{box-sizing:border-box}
+.meetings-page h1,.meetings-page h2,.meetings-page h3,.meetings-page p{margin:0}
+.meetings-page h1{font-size:clamp(22px,2.2vw,30px);line-height:1.2;letter-spacing:-.6px;margin:6px 0}
+.meetings-page h2{font-size:15px;line-height:1.4}
+.meetings-page h3{font-size:13px;line-height:1.4;margin:10px 0}
+.meetings-page p,.meetings-page small{color:var(--muted);line-height:1.5;overflow-wrap:anywhere}
+.meetings-page small{display:block;font-size:10px}
+.meetings-page button,.meetings-page input,.meetings-page select,.meetings-page textarea,.meetings-page .mt-button-link{font:inherit;border:1px solid var(--border);border-radius:4px;color:var(--text);background:var(--surface);max-width:100%}
+.meetings-page button,.meetings-page .mt-button-link{min-height:34px;padding:7px 9px;font-weight:600;font-size:11px;cursor:pointer;line-height:1.4;overflow-wrap:anywhere;text-decoration:none}
+.meetings-page button:hover:not(:disabled),.meetings-page .mt-button-link:hover{background:var(--subtle);border-color:var(--secondary)}
+.meetings-page button:disabled{opacity:.55;cursor:not-allowed}
+.meetings-page button:focus-visible,.meetings-page input:focus-visible,.meetings-page textarea:focus-visible,.meetings-page select:focus-visible,.meetings-page a:focus-visible,.meetings-page summary:focus-visible{outline:3px solid var(--secondary);outline-offset:3px}
+.meetings-page button[aria-pressed=true],.meetings-page .mt-primary{border-color:var(--secondary);background:color-mix(in srgb,var(--secondary) 15%,var(--surface));color:var(--text)}
+.meetings-page input,.meetings-page select,.meetings-page textarea{padding:8px;min-height:35px;min-width:0;width:100%}
+.meetings-page textarea{resize:vertical}
+.meetings-page input[type=checkbox]{width:17px;height:17px;min-height:17px;flex-shrink:0;accent-color:var(--secondary)}
+.meetings-page label{display:flex;flex-direction:column;gap:5px;color:var(--muted);font-size:11px;min-width:0}
+.meetings-page a{color:var(--text);text-decoration:underline;text-decoration-color:var(--secondary);text-underline-offset:3px;overflow-wrap:anywhere}
+.meetings-page .mt-header{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:16px}
+.meetings-page .mt-header>div:first-child{min-width:0;max-width:700px}
+.meetings-page .mt-breadcrumb{font-size:9px;font-weight:700;letter-spacing:.8px}
+.meetings-page .mt-header>.mt-actions{flex-shrink:0;justify-content:flex-end}
+.meetings-page .mt-actions{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.meetings-page .mt-panel{min-width:0;background:var(--surface);border:1px solid var(--border);border-radius:5px;padding:14px;box-shadow:0 1px 3px color-mix(in srgb,var(--text) 5%,transparent)}
+.meetings-page .mt-kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:11px;margin-bottom:11px}
+.meetings-page .mt-kpi{display:flex;flex-direction:column;align-items:flex-start;min-height:117px}
+.meetings-page .mt-kpi h2{font-size:10px;font-weight:500;color:var(--muted);text-transform:uppercase}
+.meetings-page .mt-kpi>strong{font-size:29px;font-variant-numeric:tabular-nums;line-height:1.3;margin:7px 0}
+.meetings-page .mt-kpi p{font-size:10px;margin-top:auto}
+.meetings-page .mt-data-note{font-size:10px;margin:8px 0 12px}
+.meetings-page .mt-toolbar{margin-bottom:13px}
+.meetings-page .mt-section-head{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;margin-bottom:11px}
+.meetings-page .mt-filters{display:grid;grid-template-columns:minmax(180px,1.7fr) repeat(3,minmax(110px,1fr));gap:7px;align-items:end}
+.meetings-page .mt-filters .mt-search{grid-column:auto}
+.meetings-page .mt-filters input,.meetings-page .mt-filters select{font-size:11px;min-height:34px;padding:7px}
+.meetings-page .mt-filters label{font-size:10px;gap:4px}
+.meetings-page .mt-layout{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(280px,1fr);gap:13px;align-items:start}
+.meetings-page .mt-side{display:flex;flex-direction:column;gap:13px;min-width:0}
+.meetings-page .mt-week-nav{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-bottom:10px}
+.meetings-page .mt-week-nav>strong{font-size:10px}
+.meetings-page .mt-week-nav label{flex-direction:row;align-items:center;font-size:10px}
+.meetings-page .mt-week-nav input{width:140px}
+.meetings-page .mt-week-strip{display:grid;grid-template-columns:repeat(7,minmax(66px,1fr));gap:5px;overflow-x:auto;padding:3px 2px 8px;max-width:100%}
+.meetings-page .mt-week-strip button{display:flex;flex-direction:column;align-items:center;gap:4px;min-height:74px;padding:8px 5px;font-size:11px}
+.meetings-page .mt-week-strip button[aria-current=date]{outline:2px solid var(--secondary);outline-offset:-3px}
+.meetings-page .mt-week-strip button[aria-pressed=true] small{color:var(--text)}
+.meetings-page .mt-week-strip button>span{font-size:10px;color:var(--text)}
+.meetings-page .mt-agenda{display:flex;flex-direction:column;gap:8px}
+.meetings-page .mt-meeting{padding:10px;border:1px solid var(--border);border-left:3px solid var(--secondary);border-radius:4px;min-width:0}
+.meetings-page .mt-status-cancelled,.meetings-page .mt-status-no-show{border-left-color:color-mix(in srgb,#e53c53 70%,var(--text))}
+.meetings-page .mt-card-top{display:grid;grid-template-columns:minmax(100px,1fr) minmax(0,2fr) auto auto;align-items:start;gap:6px;margin-bottom:5px}
+.meetings-page .mt-time{font-variant-numeric:tabular-nums;font-size:10px;min-width:0;overflow-wrap:anywhere}
+.meetings-page .mt-time strong{font-weight:700}
+.meetings-page .mt-badge{font-size:9px;line-height:1.4;border:1px solid var(--border);border-radius:3px;padding:3px 5px;background:var(--subtle);color:var(--text);display:inline-block}
+.meetings-page .mt-title{display:block;border:0;padding:0;min-height:0;font-size:12px;font-weight:700;text-align:left;white-space:normal;overflow-wrap:anywhere;line-height:1.35;margin-bottom:0;background:transparent}
+.meetings-page .mt-card-meta{display:flex;flex-wrap:wrap;gap:4px 12px;margin:5px 0;color:var(--muted);font-size:10px;overflow-wrap:anywhere}
+.meetings-page .mt-context{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin:5px 0}
+.meetings-page .mt-card-actions{display:flex;flex-wrap:wrap;align-items:flex-start;gap:5px;margin-top:7px}
+.meetings-page .mt-card-actions button,.meetings-page .mt-card-actions .mt-button-link{font-size:10px;min-height:30px;padding:5px 7px}
+.meetings-page .mt-join-unavailable{display:flex;flex-direction:column;gap:3px}
+.meetings-page .mt-join-unavailable small{font-size:9px;max-width:105px}
+.meetings-page .mt-references{display:flex;flex-wrap:wrap;gap:8px;margin-top:9px;font-size:10px}
+.meetings-page .mt-references>span{max-width:100%}
+.meetings-page .mt-references small{font-size:9px}
+.meetings-page .mt-form-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:8px 0}
+.meetings-page .mt-field-wide{grid-column:1/-1;min-width:0}
+.meetings-page .mt-form-group{border:0;padding:0;margin:12px 0;min-width:0}
+.meetings-page .mt-form-group legend{font-size:11px;font-weight:700;padding:0;color:var(--text)}
+.meetings-page .mt-additional{border-top:1px solid var(--border);padding-top:4px;margin:9px 0}
+.meetings-page .mt-additional>summary,.meetings-page .mt-other-references>summary{cursor:pointer;min-height:34px;padding:8px 0;color:var(--text);font-size:11px}
+.meetings-page .mt-save-actions{padding-top:9px;border-top:1px solid var(--border)}
+.meetings-page .mt-more{position:relative}
+.meetings-page .mt-action-menu{position:absolute;right:0;top:calc(100% + 4px);z-index:5;width:230px;max-width:calc(100vw - 64px);background:var(--surface);color:var(--text);border:1px solid var(--border);border-radius:5px;padding:5px;box-shadow:0 5px 18px #0002}
+.meetings-page .mt-action-menu .mt-menu-row>button{display:block;width:100%;text-align:left;border-color:transparent;min-height:34px}
+.meetings-page .mt-menu-row small{padding:0 7px 5px;font-size:9px}
+.meetings-page .mt-lead-link{display:inline-block;font-size:10px;margin-top:5px}
+.meetings-page .mt-other-references>summary{font-size:10px;min-height:26px;padding:5px 0}
+.meetings-page .mt-no-link{align-self:center;font-size:10px}
+.meetings-page .mt-form-pair{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.meetings-page .mt-form-fields summary{cursor:pointer;color:var(--text);min-height:34px;padding:8px 0}
+.meetings-page .mt-scheduler{scroll-margin-top:85px;outline-offset:3px}
+.meetings-page .mt-scheduler>p{font-size:10px}
+.meetings-page .mt-conflicts{font-size:11px}
+.meetings-page .mt-conflicts>p{padding:9px;border:1px solid color-mix(in srgb,#d99a19 60%,var(--border));background:color-mix(in srgb,#d99a19 10%,var(--surface));color:var(--text)}
+.meetings-page .mt-check{flex-direction:row;align-items:center;min-height:44px}
+.meetings-page .mt-recent>p{font-size:10px;margin-top:6px}
+.meetings-page .mt-recent article,.meetings-page .mt-review article{border-top:1px solid var(--border);padding:12px 0;margin-top:9px;overflow-wrap:anywhere}
+.meetings-page .mt-recent article p{font-size:11px;margin:7px 0}
+.meetings-page .mt-empty{padding:18px 8px;color:var(--muted);line-height:1.5;text-align:center;font-size:11px}
+.meetings-page .mt-review{margin-top:15px;scroll-margin-top:85px;overflow-wrap:anywhere}
+.meetings-page .mt-review p{margin:8px 0}
+.meetings-page .mt-confirm{border:2px solid var(--secondary);padding:12px;margin-top:13px}
+.meetings-page .mt-notice{display:flex;align-items:center;justify-content:space-between;gap:10px;background:var(--surface);border:1px solid var(--border);padding:10px;margin-bottom:12px;border-radius:4px;overflow-wrap:anywhere}
+.meetings-page .mt-error{padding:11px;border:1px solid #e53c53;color:var(--text);background:color-mix(in srgb,#e53c53 8%,var(--surface));margin:11px 0;border-radius:4px}
+@media(max-width:1150px){.meetings-page .mt-header{align-items:flex-start;flex-direction:column}.meetings-page .mt-layout{grid-template-columns:minmax(0,1.5fr) minmax(260px,1fr)}.meetings-page .mt-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.meetings-page .mt-filters{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:900px){.meetings-page .mt-layout{grid-template-columns:1fr}.meetings-page .mt-form-fields{display:grid;grid-template-columns:1fr 1fr}.meetings-page .mt-form-fields>details,.meetings-page .mt-form-fields>label:has(textarea){grid-column:1/-1}.meetings-page .mt-filters{grid-template-columns:repeat(2,minmax(0,1fr))}.meetings-page .mt-card-meta{display:flex;flex-wrap:wrap}}
+@media(max-width:600px){.meetings-page button,.meetings-page .mt-button-link,.meetings-page .mt-card-actions button,.meetings-page .mt-card-actions .mt-button-link,.meetings-page .mt-title{min-height:44px}.meetings-page input,.meetings-page select{min-height:44px}.meetings-page .mt-header>.mt-actions{width:100%;justify-content:flex-start;display:grid;grid-template-columns:1fr 1fr}.meetings-page .mt-header>.mt-actions>.mt-primary{grid-column:1/-1}.meetings-page .mt-kpis{gap:8px}.meetings-page .mt-kpi{padding:11px;min-height:120px}.meetings-page .mt-kpi>strong{font-size:26px}.meetings-page .mt-panel{padding:11px}.meetings-page .mt-filters,.meetings-page .mt-form-fields,.meetings-page .mt-form-pair,.meetings-page .mt-card-meta{grid-template-columns:1fr}.meetings-page .mt-filters .mt-search{grid-column:auto}.meetings-page .mt-week-nav>strong{order:-1;flex-basis:100%}.meetings-page .mt-week-nav label{width:100%;justify-content:space-between}.meetings-page .mt-week-nav input{width:160px}.meetings-page .mt-card-actions button,.meetings-page .mt-card-actions .mt-button-link{font-size:11px;padding:8px}.meetings-page .mt-title{font-size:14px}.meetings-page .mt-references{flex-direction:column}.meetings-page .mt-card-top{grid-template-columns:1fr auto;align-items:start}
+.meetings-page .mt-card-top .mt-title{grid-column:1/-1;grid-row:2}
+.meetings-page .mt-card-top .mt-time{grid-column:1/-1}
+.meetings-page .mt-action-menu .mt-menu-row>button,.meetings-page .mt-additional>summary{min-height:44px}
+.meetings-page .mt-filters input,.meetings-page .mt-filters select{min-height:44px}.meetings-page .mt-time{flex-basis:100%}.meetings-page .mt-meeting{padding:11px}.meetings-page .mt-form-fields summary{min-height:44px}}
+@media(max-width:360px){.meetings-page .mt-kpis{grid-template-columns:1fr}.meetings-page .mt-week-nav{gap:4px}.meetings-page .mt-week-nav button{padding:7px;font-size:10px}}
