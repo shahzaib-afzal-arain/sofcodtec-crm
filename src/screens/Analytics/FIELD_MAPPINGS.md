@@ -23,3 +23,10 @@ Analytics is read-only. Missing namespaces are empty; source helpers that seed f
 - Representative names match exactly. Contact names are not substituted for reps; aliases are not guessed. Representative filtering uses each record's actual owner, and linked attribution uses the filtered cohort only.
 - All report calendar dates use Asia/Karachi. ISO timestamps require an explicit timezone; date-only pipeline close dates are retained as authored calendar dates. Future history/creation events and invalid dates are excluded. Equivalent previous periods have the same number of calendar days. Growth needs complete dated coverage and a positive prior baseline.
 - No configured quota, revenue-target or recognized-recurring-revenue contract exists in the inspected modules. Quotas, revenue targets and ARR remain unavailable. No fictional configuration namespace is assumed.
+
+## Visual correction / separate preview
+
+- Sidebar `All Leads` badge is the literal `3.4k` in `src/components/layout/Sidebar.jsx`; it does not read storage. Analytics reads the same `crm-added-leads` namespace used by saved leads, but counts an owner-filtered, dated creation cohort. Undated/source sample exclusions are disclosed in coverage; no calculation was changed to reproduce the badge.
+- `demoData.js` constructs a separate deterministic illustrative report. It uses no source storage and writes nothing. Actual mode remains the default on each mount. Period length and representative affect preview figures; this is disclosed as illustration rather than historical reporting.
+- Preview-specific monthly targets and quotas exist only in that report, never in the actual engine. CSV branding/filename and printable report identify Demo Preview. Actual ARR, quotas and targets remain unavailable under the existing data contract.
+- KPI definitions remain in native titles and expandable reporting information; compact visible captions replace repeated paragraphs. Empty funnel/financial panels use a single explanatory state instead of blank stage bars and repeated empty totals.
